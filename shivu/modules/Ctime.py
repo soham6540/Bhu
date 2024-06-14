@@ -47,7 +47,7 @@ async def change_time(client: Client, message: Message):
 import logging
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(name)
+logger = logging.getLogger()
 
 async def log_command_usage(command: str, user_id: int, chat_id: int, success: bool, error: str = None):
     if success:
